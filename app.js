@@ -10,6 +10,8 @@ var express    = require("express"),
 	Comment    = require("./models/comment"),
 	User	   = require("./models/user"),
 	seedDb	   = require("./seeds")	
+	mongoose.Promise = require('bluebird');
+
 
 //requiring routes
 var commentRoutes    = require("./routes/comments"),
